@@ -1,0 +1,7 @@
+# Populating db bin folders
+# 1. mongo db
+MONGODB_PATH=/Users/lgu41/Documents/Development/lib/mongodb-osx-x86_64-3.2.8/bin
+export PATH=$PATH:$MONGODB_PATH
+alias startmongo='mongod --dbpath /Users/lgu41/Documents/Development/db/dbpath'
+# mongodb 1b02Z4nOxNSW in ec2
+alias ec2web='ssh -i /Users/lgu41/Dropbox/Development/AWS/iekey.pem bitnami@ec2-52-210-170-169.eu-west-1.compute.amazonaws.com'
