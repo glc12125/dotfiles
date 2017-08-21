@@ -224,4 +224,7 @@ fi
 ## ------------------------------
 
 ## Define any user-specific variables you want here.
-source ~/.bashrc_custom
+if [ -s ~/Development/dotfiles/.bashrc_custom ]; then
+    source ~/Development/dotfiles/.bashrc_custom
+fi
+

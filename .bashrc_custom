@@ -1,1 +1,4 @@
 
+CSCOPE_DB=/home/liangchuan/Development/yavide/cscope.out
+export CSCOPE_DB
+
