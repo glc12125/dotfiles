@@ -1,0 +1,4 @@
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+
+# mongodb 1b02Z4nOxNSW in ec2
+alias ec2web='ssh -i /Users/liangchuangu/Dropbox/Development/AWS/iekey.pem bitnami@ec2-52-210-170-169.eu-west-1.compute.amazonaws.com'
