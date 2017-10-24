@@ -1,2 +1,7 @@
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
+CSCOPE_DB=/home/liangchuan/Development/yavide/cscope.out
+export CSCOPE_DB
+
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/
+export LD_LIBRARY_PATH
