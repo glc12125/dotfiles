@@ -3,20 +3,20 @@
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
-export PATH="/usr/local/mysql/bin:$PATH"
+#export PATH="/usr/local/mysql/bin:$PATH"
 
 # Setting PATH for Python 2.7
 # The orginal version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-export PATH=$PATH:/Users/liangchuangu/Development/android/adt-bundle-mac-x86_64-20140702/sdk/platform-tools/
-export PATH=$PATH:/usr/local/share/npm/bin/
+#PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+#export PATH=$PATH:/Users/liangchuangu/Development/android/adt-bundle-mac-x86_64-20140702/sdk/platform-tools/
+#export PATH=$PATH:/usr/local/share/npm/bin/
 
 ##
 # Your previous /Users/liangchuangu/.bash_profile file was backed up as /Users/liangchuangu/.bash_profile.macports-saved_2014-11-23_at_00:59:03
 ##
 
 # MacPorts Installer addition on 2014-11-23_at_00:59:03: adding an appropriate PATH variable for use with MacPorts.
-export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+#export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 
 # Populating db bin folders
 # 1. mongo db
@@ -24,23 +24,23 @@ MONGODB_PATH=/Users/liangchuangu/Development/db/mongodb/bin
 export PATH=$PATH:$MONGODB_PATH
 alias startmongo='mongod --dbpath /Users/liangchuangu/Development/db/dbpath'
 # 2. java home
-export JAVA_HOME=$(/usr/libexec/java_home)
-export PATH=$PATH:$JAVA_HOME
+#export JAVA_HOME=$(/usr/libexec/java_home)
+#export PATH=$PATH:$JAVA_HOME
 
 # 3. linkchecker
-LINK_CHECKER=/Users/liangchuangu/Development/libs/LinkChecker
-export PATH=$PATH:$LINK_CHECKER
+#LINK_CHECKER=/Users/liangchuangu/Development/libs/LinkChecker
+#export PATH=$PATH:$LINK_CHECKER
 
 
 # Finished adapting your PATH environment variable for use with MacPorts.
 
-if [ -f /Users/liangchuangu/configuration/.aws ]; then
-    source /Users/liangchuangu/configuration/.aws
-fi
+#if [ -f /Users/liangchuangu/configuration/.aws ]; then
+#    source /Users/liangchuangu/configuration/.aws
+#fi
 
 
-if [ -f /Users/liangchuangu/configuration/.myalias ]; then
-    source /Users/liangchuangu/configuration/.myalias
+if [ -f ~/Development/dotfiles/.myalias ]; then
+    source ~/Development/dotfiles/.myalias
 fi
 
 # Git branch in prompt.
@@ -82,15 +82,18 @@ function prompt {
 prompt
 
 # Add auto completion for git
-if [ -f ~/configuration/.git-completion.bash ]; then
-  . /usr/local/share/zsh/site-functions/.git-completion.bash
-fi
+#if [ -f ~/configuration/.git-completion.bash ]; then
+#  . /usr/local/share/zsh/site-functions/.git-completion.bash
+#fi
 
 ### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+#export PATH="/usr/local/heroku/bin:$PATH"
 
-export PATH="/usr/local/git/bin:$PATH"
-export PATH="/Users/liangchuangu/Development/libs/tcp:$PATH"
+#export PATH="/usr/local/git/bin:$PATH"
+#export PATH="/Users/liangchuangu/Development/libs/tcp:$PATH"
 
 ### Add path for /usr/local/bin
-export PATH="/usr/local/bin:$PATH"
+#export PATH="/usr/local/bin:$PATH"
+
+### print doge
+doge
