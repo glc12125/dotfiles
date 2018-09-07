@@ -11,7 +11,7 @@
 	cmd = emerge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
 	trustExitCode = false
 [core]
-	excludesfile = /Users/liangchuangu/.gitignore
+	excludesfile = ~/.gitignore
 [alias]
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	lga = log --graph --branches --remotes --tags --decorate --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
