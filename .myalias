@@ -6,3 +6,7 @@ alias ec2web='ssh -i /Users/liangchuangu/Dropbox/Development/AWS/iekey.pem bitna
 alias findbig='find ~ -size +1G'
 alias lsbs='gls --sort=size -la'
 alias lsbsl='ls --sort=size -la'
+
+# ssh
+alias robokssh='ssh -Y robok@81.96.233.86'
+alias shenzhoussh='ssh -Y liangchuan@86.163.88.44'
