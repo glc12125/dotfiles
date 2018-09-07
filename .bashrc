@@ -228,3 +228,17 @@ if [ -s ~/Development/dotfiles/.bashrc_custom ]; then
     source ~/Development/dotfiles/.bashrc_custom
 fi
 
+# Yavide alias
+alias yavide="gvim --servername yavide -f -N -u /home/liangchuan/Development/yavide/yavide/.vimrc"
+
+alias subl1="LANG=en_US.UTF-8 subl"
+
+# Check for ROS environment, assuming Kinetic for now
+if [ -s /opt/ros/kinetic/setup.bash ]; then
+    source /opt/ros/kinetic/setup.bash
+fi
+
+if [ -s ~/catkin_ws/devel/setup.bash ]; then
+    source ~/catkin_ws/devel/setup.bash
+fi
+
