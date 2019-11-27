@@ -10,7 +10,11 @@ alias lsbsl='ls --sort=size -la'
 # ssh
 alias robokssh='ssh -Y robok@81.96.233.86'
 alias shenzhoussh='ssh -Y liangchuan@86.163.88.44'
+alias odroidssh='ssh -Y odroid@192.168.1.178'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+# copy with progress
+alias cpp='rsync -ah --progress'
