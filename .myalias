@@ -1,4 +1,9 @@
-#alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+if [ "$(uname)" == "Darwin" ]; then
+    alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+#elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    # Do something under GNU/Linux platform
+fi
+
 
 # mongodb 1b02Z4nOxNSW in ec2
 alias ec2web='ssh -i /Users/liangchuangu/Dropbox/Development/AWS/iekey.pem bitnami@ec2-52-210-170-169.eu-west-1.compute.amazonaws.com'
@@ -10,7 +15,8 @@ alias lsbsl='ls --sort=size -la'
 # ssh
 alias robokssh='ssh -Y robok@81.96.233.86'
 alias shenzhoussh='ssh -Y liangchuan@86.163.88.44'
-alias odroidssh='ssh -Y odroid@192.168.1.178'
+alias redhatssh='ssh -Y robok@192.168.0.82'
+alias odroidssh='ssh -Y odroid@192.168.1.179'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
