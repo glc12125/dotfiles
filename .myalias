@@ -14,10 +14,11 @@ alias lsbsl='ls --sort=size -la'
 
 # ssh
 alias robokssh='ssh -Y robok@81.96.233.86'
-alias shenzhoussh='ssh -Y liangchuan@86.163.88.44'
+alias shenzhoussh='ssh -Y liangchuan@192.168.178.49'
 alias redhatssh='ssh -Y robok@192.168.0.82'
 alias c2ssh='ssh -Y odroid@192.168.178.53'
-alias n2ssh='ssh -Y odroid@192.168.178.49'
+alias n2ssh='ssh -Y odroid@192.168.178.63'
+alias nanossh='ssh -Y liangchuan@192.168.178.62'
 alias neoversessh='ssh -Y liangchuan@n1sdp'
 
 # Add an "alert" alias for long running commands.  Use like so:
