@@ -17,9 +17,13 @@ alias robokssh='ssh -Y robok@81.96.233.86'
 alias shenzhoussh='ssh -Y liangchuan@192.168.178.49'
 alias redhatssh='ssh -Y robok@192.168.0.82'
 alias c2ssh='ssh -Y odroid@192.168.178.53'
-alias n2ssh='ssh -Y odroid@192.168.178.63'
-alias nanossh='ssh -Y liangchuan@192.168.0.20'
+alias n2ssh='ssh -Y liangchuan@192.168.50.190'
+alias nanossh='ssh -Y liangchuan@192.168.50.48'
+alias nxssh='ssh -Y robok@192.168.50.138'
 alias neoversessh='ssh -Y liangchuan@n1sdp'
+alias ultra96ssh='ssh -Y root@192.168.50.28'
+alias v100ssh='ssh -Y -p 20177 liangchuan@80.0.167.253'
+alias rtxchinassh='ssh -Y -p 20177 liangchuan@219.153.12.156'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -27,3 +31,14 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 # copy with progress
 alias cpp='rsync -ah --progress'
+
+# strongswan VPN
+alias camvpn_on='sudo ipsec up CAM'
+alias camvpn_off='sudo ipsec down CAM'
+
+# restart bluetooth if bluetooth does not work in Ubuntu 18
+alias restart_bt='sudo rmmod btusb && sudo modprobe btusb'
+
+# enable command line proxy
+alias proxy_start='export https_proxy=http://127.0.0.1:1081 http_proxy=http://127.0.0.1:1081 all_proxy=socks5://127.0.0.1:1080'
+
